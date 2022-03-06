@@ -29,6 +29,10 @@
   --font-family-serif: "IBM Plex Serif", "Noto Serif JP";
 }
 
+html {
+    height: 100%;
+  }
+
 body {
     height: 100%;
     margin: 0;
