@@ -132,3 +132,10 @@ header.post-header {
 header.home {
   text-align: left;
 }
+
+.post-title {
+  font-family: "IBM Plex Serif", "Kosugi";
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #111;
+}
