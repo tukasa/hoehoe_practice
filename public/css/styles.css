@@ -100,8 +100,25 @@ a.nav-item:hover {
   text-decoration: none;
 }
 
-
 .sidebar ul {
   list-style-type: none;
   padding-inline-start: 0px;
+}
+
+header.post-header {
+  padding: 50px 0px 10px 0px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+article {
+  max-width: 1000px;
+  padding: 0 5% 0;
+  margin-bottom: 100px;
+  font-size: 16px;
+  line-height: 1.9;
 }
