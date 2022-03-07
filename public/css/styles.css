@@ -56,8 +56,7 @@ body {
 
 .sidebar {
     /*position: fixed;*/
-    min-width: 200px;
-    width: 20%;
+    width: 150px;
     display: flex;
     flex-flow: column nowrap;
     flex: 0 0 260px;
