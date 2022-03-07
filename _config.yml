@@ -1,8 +1,8 @@
 # theme: jekyll-theme-minimal
 title: tukasa no hoehoe wiki
 description: tukasa no page
-url: https://tukasa.github.io/hoehoe_practice/
-baseurl: "/hoehoe_practice"
+url: https://tukasa.github.io/
+baseurl: /hoehoe_practice
 collections:
   authors:
     output: true
