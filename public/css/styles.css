@@ -122,3 +122,13 @@ article {
   font-size: 16px;
   line-height: 1.9;
 }
+
+header.post-header {
+  padding: 50px 0px 10px 0px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+header.home {
+  text-align: left;
+}
