@@ -56,10 +56,9 @@ body {
 
 .sidebar {
     /*position: fixed;*/
-    width: 150px;
     display: flex;
     flex-flow: column nowrap;
-    flex: 0 0 260px;
+    flex: 0 0 200px;
     padding: 15px;
     z-index: 1;
     background-color: rgb(126, 174, 230);
