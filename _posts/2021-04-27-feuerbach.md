@@ -2,7 +2,7 @@
 layout: post
 title : フォイエルバッハ『キリスト教の本質』
 author: tukasa
-tag: Feuerbach
+categories: Feuerbach
 ---
 ## 概要
 
