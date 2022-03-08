@@ -1,4 +1,11 @@
 <div class="sidebar-item-fixed">
+  <div class="sidebar-item sidebar-header">
+    <div class='sidebar-brand'>
+      {% assign array_title = site.title | split: " " %}
+      <a href="{{ site.baseurl }}/about/">{{ array_title[0] }}<BR>{{ array_title[1] }}<BR>{{ array_title[2] }}<BR>{{ array_title[3] }}</a>
+    </div>
+    <p class="lead">{{ site.description }}</p>
+  </div>
   <div class="sidebar-item sidebar-nav">
     <ul class="nav">
       <li class="nav-title">Pages</li>
