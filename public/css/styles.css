@@ -75,6 +75,23 @@ body {
 .sidebar-item {
   display: block;
 }
+.sidebar-header {
+  margin-bottom: 0px;
+}
+
+.sidebar-brand > a {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 160%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.lead {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 90%;
+  color: #828282;
+}
 
 .sidebar-nav {
   margin-top: 20px;
