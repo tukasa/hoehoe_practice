@@ -2,7 +2,7 @@
 layout: post
 title: 一時間でわかる近世哲学史
 author: tukasa
-categories: history
+tag: history of philosophy
 ---
 # デカルト
 
