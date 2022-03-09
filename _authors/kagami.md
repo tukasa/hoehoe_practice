@@ -1,6 +1,9 @@
 ---
 short_name: kagami
 name: kagami hiiragi
-position: Writer
 ---
-Ted has been eating fruit since he was baby.
+身長：159cm
+利き手：左利き
+生年月日：7月7日
+血液型：B型
+星座：蟹座
