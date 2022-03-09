@@ -160,3 +160,9 @@ header.home {
 .badge { font-size: 70%; }
 .badge::before { content: "("; }
 .badge::after { content: ")"; }
+
+
+.img-responsive {
+    width:200px;
+    height:auto;
+}
