@@ -11,7 +11,7 @@
     <ul>
       {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
       {% for post in filtered_posts %}
-        <li><a href="{{ post.url | absolute_url }}">{{ post.date | date: date_format }} {{ post.title }}</a></li>
+        <li><a href="{{ post.url | absolute_url }}">{{ post.date | date: "%Y/%m/%d" }} {{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
