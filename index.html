@@ -2,7 +2,8 @@
 layout: page
 title: Home
 ---
-<img src="tukasa.jpg" width="200">
-<img src="images/tukasa.jpg" width="200">
-<img src="/images/tukasa.jpg" width="200">
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files %}
+  {{ myimage.path }}
+{% endfor %}
 <h1>{{ "Hello World!" | downcase }}</h1>
