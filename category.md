@@ -7,9 +7,7 @@ title: Category
 <div>
   <h3>{{ category }}</h3>
   {% for post in site.categories[category] %}
-  <a href="{{ post.url | absolute_url }}">
-    {{ post.date | date: "%Y/%m/%d" }} {{ post.title }}
-  </a>
+    {{ post.date | date: "%Y/%m/%d" }} <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
   {% endfor %}
 </div>
 <br>

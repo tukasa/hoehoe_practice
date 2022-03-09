@@ -32,9 +32,7 @@ title: tags
       </h3>
 
       {% for post in site.tags[tag_name] %}
-        <a href="{{ post.url | prepend: baseurl }}">
-          {{ post.title }}
-        </a>
+        {{ post.date | date: "%Y/%m/%d" }} <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
       {% endfor %}
     </div>
   {% endfor %}
