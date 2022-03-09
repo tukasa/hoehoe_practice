@@ -4,7 +4,7 @@ title: Home
 ---
 {% assign image_files = site.static_files | where: "image", true %}
 {% for myimage in image_files %}
-  <img src="{{ myimage.path | replace_first: "/", "" }}" width="200">
+  {{ myimage.name }}
 {% endfor %}
 
 <h1>{{ "Hello World!" | downcase }}</h1>
