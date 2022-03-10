@@ -6,6 +6,12 @@
   </header>
 
   <div class="post-content">
+    {% assign image_files = site.static_files | where: "image", true %}
+    {% for myimage in image_files %}
+      {%- if myimage.basename == page.short_name -%}
+        <img src="{{ myimage.path | absolute_url }}" class ="img-responsive">
+      {%- endif -%}
+    {% endfor %}
     {{ content }}
     <h2>Posts</h2>
     <ul>
