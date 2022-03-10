@@ -8,7 +8,8 @@ name: tukasa hiiragi
   {{ myimage.name }}
   {{ page.short_name }}.jpg
   {% if myimage.name  %}
-    ![image]({{ myimage.path | absolute_url }}){: .img-responsive}
+    myimage.name
+    page.short_name
   {% endif %}
 {% endfor %}
 
