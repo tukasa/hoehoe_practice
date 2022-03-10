@@ -7,11 +7,11 @@ name: tukasa hiiragi
 {% for myimage in image_files %}
   {{ myimage.name }}
   {{ page.short_name }}.jpg
-  <p>
+  <div>
   {% if myimage.name  %}
     homuhomu
   {% endif %}
-  </p>
+  </div>
 {% endfor %}
 
 
