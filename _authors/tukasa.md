@@ -12,4 +12,5 @@ name: tukasa hiiragi
 星座：蟹座
 誕生石：ルビー
 誕生花：クチナシ
-{{ page.short_name }}
+{{ page.short_name }}.jpg
+{{ page.short_name }}".jpg"
