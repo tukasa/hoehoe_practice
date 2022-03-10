@@ -2,9 +2,11 @@
 layout: page
 title: Home
 ---
-{% assign image_files = site.static_files | where: "image", true %}
-{% for myimage in image_files %}
-  {{ myimage.name }}
-{% endfor %}
 
-<h1>{{ "Hello World!" | downcase }}</h1>
+<nav>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</nav>
