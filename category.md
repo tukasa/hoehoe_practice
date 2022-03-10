@@ -1,14 +1,5 @@
 ---
-layout: page
+layout: category
 title: Category
+permalink: /category/
 ---
-{% for categories in site.categories %}
-{% assign category = categories[0] %}
-<div>
-  <h3>{{ category }}</h3>
-  {% for post in site.categories[category] %}
-    {{ post.date | date: "%Y/%m/%d" }} <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-  {% endfor %}
-</div>
-<br>
-{% endfor %}
