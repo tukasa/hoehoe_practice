@@ -8,9 +8,9 @@ name: tukasa hiiragi
   {{ myimage.name }}
   {{ page.short_name }}.jpg
   <div class ="img-responsive">
-  {% if myimage.name  %}
+  {%- if myimage.name -%}
     <img src={{ myimage.path | absolute_url }}>
-  {% endif %}
+  {%- endif -%}
   </div>
 {% endfor %}
 
