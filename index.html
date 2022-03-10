@@ -11,6 +11,8 @@ title: Home
 {% assign image_files = site.static_files %}
 {% for myimage in image_files %}
     {{ myimage.path | absolute_url }}
+    {{ myimage.image }}
+    {{ myimage.pdf }}
 {% endfor %}
 
 <nav>
