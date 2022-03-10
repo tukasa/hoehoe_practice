@@ -8,8 +8,8 @@ name: tukasa hiiragi
   {{ myimage.name }}
   {{ page.short_name }}.jpg
   {% if myimage.name  %}
-    myimage.name
-    page.short_name
+    {{ myimage.name }}
+    {{ page.short_name }}
   {% endif %}
 {% endfor %}
 
