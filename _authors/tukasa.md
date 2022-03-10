@@ -5,9 +5,9 @@ name: tukasa hiiragi
 
 {% assign image_files = site.static_files | where: "image", true %}
 {% for myimage in image_files %}
-  {{ myimage.name }}
-  {{ page.short_name }}.jpg
-  {%- if myimage.name -%}
+  {{ myimage.basename }}
+  {{ page.short_name }}
+  {%- if myimage.basename == page.short_name -%}
     <img src="{{ myimage.path | absolute_url }}" class ="img-responsive">
   {%- endif -%}
 {% endfor %}
