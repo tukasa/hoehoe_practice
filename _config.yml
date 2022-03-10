@@ -29,3 +29,4 @@ defaults:
       path: "assets/pdf"
     values:
       pdf: true
+
