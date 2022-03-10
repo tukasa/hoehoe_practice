@@ -5,9 +5,11 @@ name: tukasa hiiragi
 
 {% assign image_files = site.static_files | where: "image", true %}
 {% for myimage in image_files %}
- {{ myimage.name }}
- {{ page.short_name }}.jpg
-  ![image]({{ myimage.path | absolute_url }}){: .img-responsive}
+  {{ myimage.name }}
+  {{ page.short_name }}.jpg
+  {% if myimage.name  %}
+    ![image]({{ myimage.path | absolute_url }}){: .img-responsive}
+  {% endif %}
 {% endfor %}
 
 生年月日：7月7日
