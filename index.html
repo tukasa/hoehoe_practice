@@ -8,6 +8,11 @@ title: Home
   {{{ mypdf.path | absolute_url }}
 {% endfor %}
 
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files %}
+    {{ myimage.path | absolute_url }}
+{% endfor %}
+
 <nav>
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
