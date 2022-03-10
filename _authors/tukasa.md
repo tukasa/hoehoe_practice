@@ -7,10 +7,11 @@ name: tukasa hiiragi
 {% for myimage in image_files %}
   {{ myimage.name }}
   {{ page.short_name }}.jpg
+  {% if myimage.name  %}
+    <p>homuhomu</p>
+  {% endif %}
 {% endfor %}
-{% if page.short_name  %}
-  {{ page.short_name }}.jpg
-{% endif %}
+
 
 生年月日：7月7日
 星座：蟹座
