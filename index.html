@@ -3,6 +3,11 @@ layout: page
 title: Home
 ---
 
+{% assign pdf_files = site.static_files | where: "pdf", true %}
+{% for mypdf in pdf_files %}
+  {{{ mypdf.path | absolute_url }}
+{% endfor %}
+
 <nav>
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
@@ -10,3 +15,4 @@ title: Home
     </a>
   {% endfor %}
 </nav>
+    
