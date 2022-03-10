@@ -10,7 +10,7 @@ name: tukasa hiiragi
   <div>
   {% if myimage.name  %}
     ![image]({{ myimage.path | absolute_url }}){: .img-responsive}
-    {{ ![image](https://tukasa.github.io/hoehoe_practice/images/tukasa.jpg){: .img-responsive}  | markdownify }}
+    {{ "![image](https://tukasa.github.io/hoehoe_practice/images/tukasa.jpg){: .img-responsive}"  | markdownify }}
   {% endif %}
   </div>
 {% endfor %}
