@@ -7,11 +7,9 @@ name: tukasa hiiragi
 {% for myimage in image_files %}
   {{ myimage.name }}
   {{ page.short_name }}.jpg
-  <div class ="img-responsive">
   {%- if myimage.name -%}
-    <img src="{{ myimage.path | absolute_url }}">
+    <img src="{{ myimage.path | absolute_url }}" class ="img-responsive">
   {%- endif -%}
-  </div>
 {% endfor %}
 
 
