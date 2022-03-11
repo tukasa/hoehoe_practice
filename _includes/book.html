@@ -12,6 +12,8 @@
           <img src="{{ myimage.path | absolute_url }}" class ="img-responsive">
         {% endif %}
       {% endfor %}
+      <li>発行日:{{ page.date_of_issue }}</li>
+      <li>ページ数:{{ page.total_number_of_pages }}</li>
       {{ content }}
     </div>
   </article>
