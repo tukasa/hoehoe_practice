@@ -1,14 +1,12 @@
 ---
 layout: page
-title: Blog
+title: Latest Posts
 ---
-<h1>Latest Posts</h1>
 
 <ul>
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
+      {{ post.date | date: "%m/%d " }} {{ post. }} <a href="{{ post.url  | relative_url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
