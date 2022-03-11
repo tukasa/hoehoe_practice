@@ -6,6 +6,8 @@ baseurl: "/hoehoe_practice"
 collections:
   authors:
     output: true
+  books:
+    output: true
 defaults:
   - scope:
       path: ""

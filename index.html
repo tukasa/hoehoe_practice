@@ -3,18 +3,4 @@ layout: page
 title: Home
 ---
 
-{% assign pdf_files = site.static_files | where:"pdf" ,true %}
-<ul>
-{% for mypdf in pdf_files %}
-  {% assign pdf_date_name = mypdf.basename | split: "-" %}
-  <li>{{ pdf_date_name[0] }}/{{ pdf_date_name[1] }}/{{ pdf_date_name[2] }} <a href="{{ mypdf.path | absolute_url }}">{{ pdf_date_name[3] }}</a></li>
-{% endfor %}
-</ul>
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
-</nav>
-    
+<h1>Hello world</h1>

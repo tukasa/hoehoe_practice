@@ -8,5 +8,9 @@
   link: /hoehoe_practice/author.html
 - name: Category
   link: /hoehoe_practice/category.html
+- name: Tags
+  link: /hoehoe_practice/tags.html
 - name: PDFFiles
   link: /hoehoe_practice/pdffiles.html
+- name: 同人誌
+  link: /hoehoe_practice/dojinshi.html
