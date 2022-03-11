@@ -1,7 +1,7 @@
 # theme: jekyll-theme-minimal
 title: tukasa no hoehoe wiki
 description: tukasa no page
-url: "https://tukasa.github.io"
+url: "https://tukasa.github.io/"
 baseurl: "/hoehoe_practice"
 collections:
   authors:
@@ -31,6 +31,10 @@ defaults:
       path: "assets/pdf"
     values:
       pdf: true
+  - scope:
+      path: "assets/dojinshi"
+    values:
+      dojinshi: true
   - scope:
       path: ""
       type: "books"
