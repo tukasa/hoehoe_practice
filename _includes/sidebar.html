@@ -13,7 +13,7 @@
         <a class="nav-item" href="{{ site.baseurl }}">Articles</a>
       </li>
       {% for item in site.data.navigation %}
-        <a class="nav-item" href="{{ item.link  | absolute_url }}"> {{ item.name }}</a>
+        <li><a class="nav-item" href="{{ item.link }}"> {{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </div>
