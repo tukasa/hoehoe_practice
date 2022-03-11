@@ -31,4 +31,8 @@ defaults:
       path: "assets/pdf"
     values:
       pdf: true
-
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "book"
