@@ -26,11 +26,13 @@
       <h3 id="{{ tag_name }}">
         {{ tag_name | capitalize | replace: "_", " " }}
       </h3>
-      {% for post in site.tags[tag_name] %}
       <article class="archive-item">
-        <h4>{{ post.date | date: "%Y/%m/%d" }} <a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
+        <ul>
+        {% for post in site.tags[tag_name] %}
+            <li>{{ post.date | date: "%Y/%m/%d" }} <a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
       </article>
-      {% endfor %}
     </div>
   {% endfor %}
     </div>
