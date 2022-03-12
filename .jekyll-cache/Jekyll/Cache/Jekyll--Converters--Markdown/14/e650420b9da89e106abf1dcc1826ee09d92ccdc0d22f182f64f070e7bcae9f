@@ -1,0 +1,27 @@
+I"|<table>
+  <thead>
+    <tr>
+      <th>著者</th>
+      <th style="text-align: center">タイトル</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>つかさ</td>
+      <td style="text-align: center">やさしい哲学史</td>
+    </tr>
+    <tr>
+      <td>武田宙大</td>
+      <td style="text-align: center">デカルトは正しいか</td>
+    </tr>
+    <tr>
+      <td>なご</td>
+      <td style="text-align: center">哲学的航海</td>
+    </tr>
+    <tr>
+      <td>村山洋</td>
+      <td style="text-align: center">中動態がきこえる 比較言語学による言語哲学の序説</td>
+    </tr>
+  </tbody>
+</table>
+:ET

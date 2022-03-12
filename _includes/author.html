@@ -9,7 +9,7 @@
     {% assign image_files = site.static_files | where: "image", true %}
     {% for myimage in image_files %}
       {%- if myimage.basename == page.short_name -%}
-        <img src="{{ myimage.path | absolute_url }}" class ="img-responsive">
+        <img src="{{ myimage.path  }}" class ="img-responsive">
       {%- endif -%}
     {% endfor %}
     {{ content }}
@@ -17,7 +17,7 @@
     <ul>
       {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
       {% for post in filtered_posts %}
-        <li>{{ post.date | date: "%Y/%m/%d" }} <a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
+        <li>{{ post.date | date: "%Y/%m/%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>

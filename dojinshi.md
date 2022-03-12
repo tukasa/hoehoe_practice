@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 同人誌
+permalink: /dojinshi/
 ---
 <ul>
     {% assign booklist = site.books | reverse %}
