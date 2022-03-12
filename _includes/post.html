@@ -6,8 +6,14 @@
     <div>
       {% assign author = site.authors | where: 'short_name', page.author | first %}
       {% if author %}
-        - <a href="{{ author.url | relative_url }}">{{ author.name }}</a>
+        auther: <a href="{{ author.url | relative_url }}">{{ author.name }}</a>
       {% endif %}
+    </div>
+    <div>
+      tag: 
+      {% for tag_name in page.tags %}
+        <a href="{{ site.url }}hoehoe_practice/tags/#{{ tag_name | slugize }}">{{ tag_name }}</a> 
+      {% endfor %}
     </div>
     <time class="post-date dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {%- assign date_format = site.date_format | default: "%Y/%m/%d" -%}
