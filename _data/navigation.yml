@@ -1,16 +1,16 @@
 - name: Home
-  link: /
+  link: {{ site.baseurl }}/
 - name: About
-  link: /about/
+  link: {{ site.baseurl }}/about/
 - name: Blog
-  link: /blog/
+  link: {{ site.baseurl }}/blog/
 - name: Author
-  link: /author/
+  link: {{ site.baseurl }}/author/
 - name: Category
-  link: /category/
+  link: {{ site.baseurl }}/category/
 - name: Tags
-  link: /tags/
+  link: {{ site.baseurl }}/tags/
 - name: PDFFiles
-  link: /pdffiles/
+  link: {{ site.baseurl }}/pdffiles/
 - name: 同人誌
-  link: /dojinshi/
+  link: {{ site.baseurl }}/dojinshi/
