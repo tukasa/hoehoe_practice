@@ -8,7 +8,7 @@
         <ul>
         {% for mypdf in pdf_files %}
             {% assign pdf_date_name = mypdf.basename | split: "-" %}
-            <li>{{ pdf_date_name[0] }}/{{ pdf_date_name[1] }}/{{ pdf_date_name[2] }} <a href="{{ mypdf.path }}">{{ pdf_date_name[3] }}</a></li>
+            <li>{{ pdf_date_name[0] }}/{{ pdf_date_name[1] }}/{{ pdf_date_name[2] }} <a href="{{ {{ site.baseurl }}mypdf.path }}">{{ pdf_date_name[3] }}</a></li>
         {% endfor %}
         </ul>
         </div>

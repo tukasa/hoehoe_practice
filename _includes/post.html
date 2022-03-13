@@ -12,7 +12,7 @@
     <div>
       tag: 
       {% for tag_name in page.tags %}
-        <a href="{{ site.url }}/tags/#{{ tag_name | slugize }}">{{ tag_name }}</a> 
+        <a href="{{ site.baseurl }}{{ site.url }}/tags/#{{ tag_name | slugize }}">{{ tag_name }}</a> 
       {% endfor %}
     </div>
     <time class="post-date dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">

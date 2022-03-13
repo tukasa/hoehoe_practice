@@ -9,13 +9,13 @@
       {% assign image_files = site.static_files | where: "image", true %}
       {% for myimage in image_files %}
         {% if myimage.basename == page.short_name %}
-          <img src="{{ myimage.path }}" class ="img-responsive">
+          <img src="{{ site.baseurl }}{{ myimage.path }}" class ="img-responsive">
         {% endif %}
       {% endfor %}
       <ul>
         <li>発行日:{{ page.date_of_issue }}</li>
         <li>ページ数:{{ page.total_number_of_pages }}</li>
-        <li><a href="{{ site.url }}/assets/dojinshi/{{page.short_name}}.pdf">download</a></li>
+        <li><a href="{{ site.baseurl }}/assets/dojinshi/{{page.short_name}}.pdf">download</a></li>
       </ul>
       {{ content }}
     </div>
