@@ -2,7 +2,7 @@
   <div class="sidebar-item sidebar-header">
     <div class='sidebar-brand'>
       {% assign array_title = site.title | split: " " %}
-      <a href="{{ site.baseurl }}/about.html">{{ array_title[0] }}<BR>{{ array_title[1] }}</a>
+      <a href="{{ site.baseurl }}/about.html/">{{ array_title[0] }}<BR>{{ array_title[1] }}</a>
     </div>
     <p class="lead">{{ site.description }}</p>
   </div>
@@ -10,7 +10,7 @@
     <ul class="nav">
       <li class="nav-title">Pages</li>
       {% for item in site.data.navigation %}
-        <li><a class="nav-item" href="{{ item.link }}"> {{ item.name }}</a></li>
+        <li><a class="nav-item" href="{{ site.baseurl }}{{ item.link }}"> {{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </div>
